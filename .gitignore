@@ -1,0 +1,21 @@
+# Verilator
+obj_dir/
+*.d
+
+# Build artifacts
+*.o
+*.obj
+*.exe
+
+# Waveforms / dumps
+*.vcd
+*.fst
+*.fsdb
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
