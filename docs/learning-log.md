@@ -45,7 +45,7 @@ When performing operations with two's compliment values you can sometimes run in
 Sign extension can be performed where the signed bit(most significant bit)'s value is taken and distributed to the extra bits added. Therefor -3 in 4-bits = 1101 and in 7-bits = 1111101
 
 Excercise Homework Completed:
-![Excercise Homework](/Operations.png) ![Excercise Homework](/SignedValues.png)
+![Excercise Homework](/ExcerciseSolutions/Operations.png) ![Excercise Homework](/ExcerciseSolutions/SignedValues.png)
 
 - **Next:** Logic Gates
 
