@@ -30,7 +30,7 @@ Use this file for **dated milestones**: what you read, what you simulated, and w
 ### 2026-04-19 — Operations
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
-- **Section:** 1.4.5
+- **Section:** 1.4.5, 1.4.6
 - **Repo:** N/A
 - **Learning:** 
   Addition in Binary is very similar to addition in Decimal. You simply add the values in the corresponding column and the resulting value is compared to see if it can fit in a single digit. If it cannot the remaining component is then added to the next column. This carry value is called the carry bit.
@@ -45,7 +45,7 @@ When performing operations with two's compliment values you can sometimes run in
 Sign extension can be performed where the signed bit(most significant bit)'s value is taken and distributed to the extra bits added. Therefor -3 in 4-bits = 1101 and in 7-bits = 1111101
 
 Excercise Homework Completed:
-![Excercise Homework](/ExcerciseSolutions/Operations.png) ![Excercise Homework](/ExcerciseSolutions/SignedValues.png)
+![Excercise Homework](/ExcerciseSolutions/Operations.jpg) ![Excercise Homework](/ExcerciseSolutions/SignedValues.jpg)
 
 - **Next:** Logic Gates
 
