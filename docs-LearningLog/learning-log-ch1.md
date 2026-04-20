@@ -51,7 +51,8 @@ Use this file for **dated milestones**: what you read, what you simulated, and w
   You can also have gates that have mulitple inputs(more than 2). The same logic applies that the gates impose but are extrpolated to accomodate more inputs.
 
   Example Homework:
-  <img src=/docs/ExcerciseSolutions/LogicGates1.jpg width="30.5%"> <img src=/docs/ExcerciseSolutions/LogicGates2.jpg width="40%">
+  
+  <img src=/docs-LearningLog/ExcerciseSolutions/LogicGates1.jpg width="40%"> <img src=/docs-LearningLog/ExcerciseSolutions/LogicGates2.jpg width="41%">
   
 - **Next:** 
 
@@ -76,7 +77,7 @@ Sign extension can be performed where the signed bit(most significant bit)'s val
 
 Excercise Homework Completed:
 
-<img src=/docs/ExcerciseSolutions/Operations.jpg width="45.5%"> <img src=/docs/ExcerciseSolutions/SignedValues.jpg width="40%">
+<img src=/docs-LearningLog/ExcerciseSolutions/Operations.jpg width="45.5%"> <img src=/docs-LearningLog/ExcerciseSolutions/SignedValues.jpg width="40%">
 
 
 - **Next:** Logic Gates
