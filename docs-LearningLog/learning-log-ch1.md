@@ -54,6 +54,19 @@ Use this file for **dated milestones**: what you read, what you simulated, and w
   
   <img src=/docs-LearningLog/ExcerciseSolutions/LogicGates1.jpg width="40%"> <img src=/docs-LearningLog/ExcerciseSolutions/LogicGates2.jpg width="41%">
   
+  Digital systems need to be able to translate into circuitry. In circuits, the values are not discrete and are instead continuous. Therefore the gates and variables used must be able to handle not only 0 and 1, but some noise to distinguish
+ what to make of the values.
+
+  Here is a breakdown of some key concepts:
+  - Supply voltage: The amount off voltage to represent 0 is usually 0V and is called the ground(GND). Previously the supply voltage(voltage to represent high) was around 5V and has progressively decreased as transistors got smaller so that it does not harm them.
+  - Logic levels are how we can map a continuous value into a discrete value. There are thresholds for this and between transactions between gates the noise makes the level come closer together to accomodate. In the middle there is unpreddictable behavious because the gate does not know if it is a high or low signal
+  - Noise margin is the amount that we calibrate the logic level by between output of one gate into the input of another gate. They are definedd by: NM(L) = V(IL)-V(OL) and NM(H) = V(OH) - V(IH)
+
+  - DC transfer characteristics is when the output voltage is a function of the input voltage when it is changed shlowly enough. An ideal inverter would have a threshold at the midpoint meaning anything above midpoint is HIGH and anything below is LOW. But real inverters change more gradually and therefore the point that you define as the thresholds will differ. A good approximation is when they have a slope of -1 on the DC transfer curve.
+
+  In digital logic you can choose to use groups of gates that follow similar thresholds and are therefore able to comform to static discipline. By choosing teh gates used specifically you are able to make it so that there are no errors in you design. There are 4 major logic families that exibit this behaviour: Transistor-Transistor Logic(TTL), Complimentery Metal-Oxide Semiconductor Logic(CMOS), Low Voltage TTL logic(LVTTL) and Low Voltage CMOS(LVCMOS).
+
+  <img src=/docs-LearningLog/ExcerciseSolutions/NoiseMargins.jpg width="41%">
 - **Next:** 
 
 --------------------------------------------------------------
