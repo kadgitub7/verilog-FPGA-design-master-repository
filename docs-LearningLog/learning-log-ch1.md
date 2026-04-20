@@ -67,7 +67,7 @@ Use this file for **dated milestones**: what you read, what you simulated, and w
   In digital logic you can choose to use groups of gates that follow similar thresholds and are therefore able to comform to static discipline. By choosing teh gates used specifically you are able to make it so that there are no errors in you design. There are 4 major logic families that exibit this behaviour: Transistor-Transistor Logic(TTL), Complimentery Metal-Oxide Semiconductor Logic(CMOS), Low Voltage TTL logic(LVTTL) and Low Voltage CMOS(LVCMOS).
 
   <img src=/docs-LearningLog/ExcerciseSolutions/NoiseMargins.jpg width="41%">
-- **Next:** 
+- **Next:** CMOS Transistors(1.7) and Power Consumptions(1.8)
 
 --------------------------------------------------------------
 
