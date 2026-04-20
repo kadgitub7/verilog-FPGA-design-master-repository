@@ -25,7 +25,37 @@ Use this file for **dated milestones**: what you read, what you simulated, and w
   
 - **Next:** 
 
-------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
+
+### 2026-04-20 — 
+
+- **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
+- **Section:** 1.5 & 1.6
+- **Repo:** N/A
+- **Learning:** 
+  Logic gates are a concept where operations can be done on binary inputs to produce binary outputs. This is a slight abstraction as the gates themselves are circuits which have been simplified.
+
+  A truth table is a way to represent the different combinations of inputs and their corresponding output. Each row represents a possible combinations.
+
+  The boolean expression is a mathematical representation of the truth table and can be used to generate the ouput of the gate when provided with inputs.
+
+  - The NOT gate is represented by the following symbol(->o-). It is an inverter and takes one input. The output is the reverse(eg. TRUE to FALSE or FALSE to TRUE). It can also be written as Y = A(bar).
+  - the BUFFER gate is represented by (->-). It does not change the input and simply relays it as output. It almost acts as a wire but can be used to send large amounts of current or quickly send output to many gates. Y = A
+  - AND gate takes two inputs and returns one output. It only returns TRUE if both inputs are true and returns FALSE otherwise. It can be written as Y = AB
+  - OR gate takes two inputs and return on output. It returns TRUE if either/both inputs are true and returns FALSE only if both inputs are false. It can be written as Y = A + B
+  - XOR gate is when the inputs are either but not both True returns TRUE. Otherwise it returns FALSE.
+  - NAND gate is an abbreviations of Not AND. Therefore inverts all the combinations of AND(Only TRUE when inputs are either both false or at least one false).
+  - NOR is not OR and similarly the inversion of OR.
+  - XNOR gate is TRUE when both inputs are equal
+
+  You can also have gates that have mulitple inputs(more than 2). The same logic applies that the gates impose but are extrpolated to accomodate more inputs.
+
+  Example Homework:
+  <img src=/docs/ExcerciseSolutions/LogicGates1.jpg width="30.5%"> <img src=/docs/ExcerciseSolutions/LogicGates2.jpg width="40%">
+  
+- **Next:** 
+
+--------------------------------------------------------------
 
 ### 2026-04-19 — Operations
 
