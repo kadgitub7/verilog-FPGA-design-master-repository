@@ -27,6 +27,31 @@ Use this file for **dated milestones**: what you read, what you simulated, and w
 
 ----------------------------------------------------------------
 
+### 2026-04-21 — 
+
+- **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
+- **Section:** 1.7 & 1.8
+- **Repo:** N/A
+- **Learning:** 
+  Transistors are what are used in modern day computers and chips. They are on and off switches that can be operater through changing the voltage or current is applied at the terminals. There are two main types: bipolar transistors and metal oxide semiconductor field effect transistors(MOSFET).
+
+  - Semiconductors are what are used to make these chips. Silicon is mainly used and to increase its effectiveness(since there are no free electrons in a pure substance), we can introduce dopants. These allow for either free electrons(n-type with dopants of group 5 or higher elements) or holes(p-type with dopants of group 3 or lower elements). The free electron can be used to conduct electricity and the movement of the hole is similar. By changing the concentration of the dopant you can achieve different conduction.
+
+  - Diodes are when you have a p-type silicon and n-type silicon touching. In this region the anode is the p-type silicon and the cathode is the n-type silicon. If the voltage is higher in the anode there is a forward bias and movement of charge, but if the voltage is higher in the cathode then there is no current flow.
+
+  - Capacitors can be used to store and release energy. A capacitor is two conducting plates that store energy
+  when a potential is applied. The equations C = Q/V represents the charge accumulation.
+
+  - MOSFET are assembled by taking layers of silicon called wavfers and layering them with specfic patterns and dopants. They are produced at once to limit cost. The MOSFET sandwich consists of a conducting layer(gate) on top of an insulating layer(substrate). The sandwich forms a capacitor and an insulating layer called a dielectric speperates the plates.
+  n-MOS transistors use substrate of p-type silicon and regions called source and drain which are n-type. The p-MOS transistors is the opposite. n-MOS and p-MOS transistors are at 0 and 1 are different states and when changing the voltage show different effects. They will pass one of the signals well but the other not so well.
+  CMOS is used because they allow us to have two types on one chip and we get the best signal from both types.
+
+  Power consumption is the amount of energy used per unit time. Digital system drow both static(power required when a system is idle) and dynamic(power required to change charge capacitors) power. Dynamic power consumption is given by P = 1/2 * C * V^2 * f where f is the frequency that it changes. Static power is given by P = I*V. 
+
+- **Next:** 1.9 * Practice Questions
+
+----------------------------------------------------------------
+
 ### 2026-04-20 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
