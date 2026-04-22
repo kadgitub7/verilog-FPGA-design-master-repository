@@ -27,6 +27,27 @@ Use this file for **dated milestones**: what you read, what you simulated, and w
 
 ----------------------------------------------------------------
 
+### 2026-04-22 — 
+
+- **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
+- **Section:** 1.9 & Practice Questions
+- **Repo:** N/A
+- **Learning:** 
+  Digital designers are a level of abstraction above analog circuits design and usually are able to design systems based on binary(0 or 1) values. 
+
+  Common Logic gates which are the backbone of digital logic are:
+  - NOT: Reversal gate switched the input
+  - AND: True only when all inputs are true
+  - OR: True when even one input is true
+  - XOR: True only when one single input is true(not mulitple)
+
+  Example Questions:
+  <img src=/docs-LearningLog/ExcerciseSolutions/Excercise1.jpg width="40%"> <img src=/docs-LearningLog/ExcerciseSolutions/InterviewQuestions1.jpg width="41%">
+  
+- **Next:** 
+
+----------------------------------------------------------------
+
 ### 2026-04-21 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
