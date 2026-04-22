@@ -1,7 +1,5 @@
 # Learning log
 
-Use this file for **dated milestones**: what you read, what you simulated, and what you proved on the board (if applicable).
-
 ## Template (copy per entry)
 
 ### YYYY-MM-DD — Short title
