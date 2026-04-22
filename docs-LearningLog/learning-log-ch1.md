@@ -45,7 +45,7 @@ Use this file for **dated milestones**: what you read, what you simulated, and w
   
   <img src=/docs-LearningLog/ExcerciseSolutions/Excercise1.jpg width="40%"> <img src=/docs-LearningLog/ExcerciseSolutions/InterviewQuestions1.jpg width="41%">
   
-- **Next:** 
+- **Next: Chapter 2** 
 
 ----------------------------------------------------------------
 
