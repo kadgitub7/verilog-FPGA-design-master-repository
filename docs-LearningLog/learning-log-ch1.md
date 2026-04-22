@@ -42,6 +42,7 @@ Use this file for **dated milestones**: what you read, what you simulated, and w
   - XOR: True only when one single input is true(not mulitple)
 
   Example Questions:
+  
   <img src=/docs-LearningLog/ExcerciseSolutions/Excercise1.jpg width="40%"> <img src=/docs-LearningLog/ExcerciseSolutions/InterviewQuestions1.jpg width="41%">
   
 - **Next:** 
