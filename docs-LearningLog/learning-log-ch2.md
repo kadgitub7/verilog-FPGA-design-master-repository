@@ -73,6 +73,7 @@
   You use Sum Of Product(SOP) when there are few true lines and use Product Of Sum(POS) when there are few false lines. But both still may not produce the more simple expression.
 
   Excercises:
+  
   <img src=/docs-LearningLog/ExcerciseSolutions/BooleanExpressions.jpg width="40%">
 
 - **Next:** 2.3 & 2.4
