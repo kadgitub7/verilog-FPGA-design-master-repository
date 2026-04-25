@@ -25,6 +25,48 @@
 
 ----------------------------------------------------------------
 
+### 2026-04-24 — 
+
+- **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
+- **Section:** 2.3 & 2.4
+- **Repo:** N/A
+- **Learning:** 
+  The axioms of Boolean Algebra by which everything is derived are the following:
+  1) B = 0 if B not equal to 1(vice versa)
+  2) 0' = 1 and 1' = 0
+  3) 0 AND 0 = 0, 1 AND 1 = 1, 0 AND 1 = 0
+  4) 0 OR 0 = 0, 1 OR 1 = 1, 1 OR 0 = 1
+
+  Theorums of Boolean Algebra are used to simplify single variable statements:
+  1) B AND 1 = B, B OR 0 = B
+  2) B AND 0 = 0, B OR 1 = 1
+  3) B AND B = B, B OR B = B
+  4) B'' = B
+  5) B AND B' = 0, B OR B' = 1
+
+  Boolean Theorums for more than 1 variable:
+  1) B AND C = C AND B, B OR C = C OR B
+  2) B AND (C AND D) = D AND (C AND B), B OR (C OR D) = D OR (C OR B)
+  3) (B AND C) OR (B AND D) = B*(C+D), (B+C) * (B+D) = B + (C * D)
+  4) B * (B + C) = B, B + (B*C) = B
+  5) (B * C) + (B * C') = B, (B + C) * (B + C') = B
+  6) (B * C) + (B' * D) + (C * D) = B * C + B' * D, (B+C)* (B'+D)* (C+D) = (B+C)*(B'+D)
+  7) (B * C * D)' = B' + C' + D', (B+C+D)' = B' * C' * D'
+
+  A boolean expression is minimized if it has all prime implicants. A prime implicant is when there is a group os literals where they cannot be combined in any way to decrease the amount of literals.
+
+  When identifying minimized boolean expressions it can be difficult to get on the first attempt. A lot of different angles must be identified as well as tried to get the most minimized form. K'Maps are better at finding this minimized form which will be discussed later.
+
+  
+
+  
+  Excercises:
+
+  
+- **Next:** 
+
+----------------------------------------------------------------
+
 ### 2026-04-23 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
