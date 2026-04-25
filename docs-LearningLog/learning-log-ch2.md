@@ -25,10 +25,44 @@
 
 ----------------------------------------------------------------
 
+### 2026-04-25 — 
+
+- **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
+- **Section:** 2.4 & 2.5
+- **Repo:** N/A
+- **Learning:** 
+  Schematics are a way to show the gates to represent a boolean expression. There are some rules associated with these drawings to keep them consistent:
+  1) Inputs on the left(or top) outputs on the right(or bottom)
+  2) Gates should flow left to right when possible
+  3) Wires connect at a T juction
+  4) Wires that cross with a dot indicates a connection
+  5) Wires that cross with no dot indicate no connection
+
+  X is used to denote don't care. It can be used to show that the remaining inputs do not affect the output.
+
+  Logic using Sum Of Products uses two level logic. This means that there are literals which are fed through AND gates and then OR gates to produce the ouputs. There are two levels of gates. With higher level logic we can reduce the number of gates.
+
+  - An example of this is when producing and XOR gate using two level while the simplified version using the XOR gate produces a much cleaner approach. Especially when we are handling more than two inputs.
+
+  In CMOS NAND and NOR are more efficient gates compared to AND and OR. Therefore some application can be more efficient when using multi level logic. This is where bubble pushing comes into play.
+
+  Bubble pushing rules:
+  - Begin at the output and work towards input
+  - Push bubble on final output back to inputs to read Y instead of Y'
+  - Draw gates to that bubbles cancel. If ouputs have bubbles couple with inputs with bubbles in the next gate to cancel
+
+  Excercises:
+
+  <img src=/docs-LearningLog/ExcerciseSolutions/CircuitDrawing.jpg width="40%"><img src=/docs-LearningLog/ExcerciseSolutions/MultiLevelLogic.jpg width="40%">
+  
+- **Next:** 2.6 & 2.7
+
+----------------------------------------------------------------
+
 ### 2026-04-24 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
-- **Section:** 2.3 & 2.4
+- **Section:** 2.3
 - **Repo:** N/A
 - **Learning:** 
   The axioms of Boolean Algebra by which everything is derived are the following:
@@ -57,13 +91,11 @@
 
   When identifying minimized boolean expressions it can be difficult to get on the first attempt. A lot of different angles must be identified as well as tried to get the most minimized form. K'Maps are better at finding this minimized form which will be discussed later.
 
-  
-
-  
   Excercises:
 
+  <img src=/docs-LearningLog/ExcerciseSolutions/BooleanAlgebra.jpg width="40%">
   
-- **Next:** 
+- **Next:** 2.4 & 2.5
 
 ----------------------------------------------------------------
 
