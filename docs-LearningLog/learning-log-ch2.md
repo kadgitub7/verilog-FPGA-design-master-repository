@@ -25,6 +25,49 @@
 
 ----------------------------------------------------------------
 
+### 2026-04-26 — 
+
+- **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
+- **Section:** 2.6 & 2.7
+- **Repo:** N/A
+- **Learning:** 
+  Circuits usually have value of 0 or 1 but there are two other values that are used to represent unknown or illegal values(X and Z respectively).
+
+  Illegal value X: This can happen when a single input to a gate gets two wires converging and have mixed signals. This is called contention and can lead to fighting between the signals resulting in the element getting hot and possibly breaking. 
+  - X is also used to signify that a value has not been initialized. This is done by simulator tools
+  - In truth tables it means don't care or the value of an input does not change the output
+
+  Floating value Z: This means the node is neither beign driven HIGH or LOW. Z does not mean either 0 or 1 and can be either or any value in between. 
+  - It is sometimes the output of the presence of an enable. When the enable is false the circuit does not operate and the output is Z. But when the enable is HIGH the circuit operates and produces whatever output
+  
+
+  K'Maps are what are used to simplify boolean expressions. They are much more efficient compared to manipulating equations and are also a visual method. They work best when there are up to 4 variables.
+
+  The K'Map includes all possible combinations of the variables. Inside the squares are the output for that given combination of inputs. Adjacent squares differ by the value of exactly 1 literal.
+  - The sequence usually used is: 00, 01, 11, 10
+  - The adjacency also wraps around meaning the far right and far left differ by one literal. Additionally the top and bottom squared differ by 1 literal
+
+  You can group values together and write the groups as a sum of products form. Variables are written as their true or complimented form and variables that change values in the group are excluded. Prime implicant in a K'Map is the group with the largest number of squares covered.
+
+  Rules for K'Map:
+  1) Use the fewest number of circles(rectangles) to capture all 1s
+  2) All squares in the groupings must be all 1s
+  3) Each group must span the # of square equal to a power of 2(eg. 1,2,4,8,16)
+  4) Each group should be as large as possible
+  5) Groups may wrap around the edges or cover only the corners
+  6) A 1 may be present in mulitple groups if doing so minimizes number of groups
+  7) Don't care values can be used in the groupings as substitute of 1s.
+  
+  K'Maps and boolean algebra are two techniques that are used to simplify circuits. Although for more complicated problems, logic synthesizers are used which are more efficient than humans. 
+
+
+  Excercises:
+  
+  <img src=/docs-LearningLog/ExcerciseSolutions/KMaps.jpg width="40%">
+- **Next:** 2.8 & 2.9
+
+----------------------------------------------------------------
+
 ### 2026-04-25 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
