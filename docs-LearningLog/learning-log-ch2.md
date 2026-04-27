@@ -29,7 +29,7 @@
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
 - **Section:** 2.8 & 2.9
-- **Repo:** Check out **/repos/twoFourDecoder.v** and **/repos/oneTwoDemux**
+- **Repo:** Check out **/repos/twoFourDecoder.v** and **/repos/oneTwoDemux.v**
 - **Learning:** 
   
   Multiplexers are one of the most commonly used combinational circuits. They select one of the many inputs to be their output based on a select line(sometimes called a mux). 
