@@ -25,6 +25,45 @@
 
 ----------------------------------------------------------------
 
+### 2026-04-27 — 
+
+- **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
+- **Section:** 2.8 & 2.9
+- **Repo:** Check out **/repos/twoFourDecoder.v** and **/repos/oneTwoDemux**
+- **Learning:** 
+  
+  Multiplexers are one of the most commonly used combinational circuits. They select one of the many inputs to be their output based on a select line(sometimes called a mux). 
+  A 2:1 multiplexer takes two inputs and outputs the value of the line(Input 1 or Input 2) based on if the select value is 0 or 1. Similar extrapolation can be done for higher level mulitplexers.
+
+  To build higher level mulitplexers you can use logic gates or mulitple lower level multiplexers. The issue is determining which select line to place for each multiplexer in the network. This is usually determined through inspection. N:1 mulitpliexers need log base 2 (N) select lines.
+
+  A decoder takes some inputs and the number of outputs is equalivalent to the number of different values the input bits can represent in binary. The output bit that is HIGH is the value of the input in binary. 00 input corresponds to Y0 as HIGH, 01 input corresponds to Y1 as HIGH.
+  - Decoders can be used to build logic. This is because they have a sequence of minterms and form an equation that takes into account all the combination of literals. An example is the formation of logic XOR from 2:4 decoder and OR gate.
+
+  Timing is one of the most complicated components of circuit building and analysis. It involves understanding that there is a delay between when an input changes value to the output changing value. A timing diagram is used which portrays the transient reponse of the circuit an input changes.
+  - The transition from LOW to HIGH is the rising edge
+  - The transition from HIGH to LOW is called the falling edge
+  Dealy is measured by the time between 50% of the input signal to 50% of the output signal. This means the time when the input signal is half way between its transistion voltage to the outptu signal being half way between its transition voltage.
+
+  The propagation delay, tpd, is the maximum time from when an input changes until the output or outputs reach their final value. For a combinational circuit this is calculated by the sum of the propagation delay for each gate on the critical path.
+  The contamination delay, tcd, is the minimum time from when an input changes until any output starts to change its value. For a combination circuit this is calculated by the sum of the contamination delay fro each gate on the short path.
+  - These two timing delays may be different due to the temperature, having mulitple inputs and outptu which have different speeds, different rising and falling delays
+
+  The short path is the path of least resistance an time(usually goes through least amount of gates). The cirtical path is the path that goes from input to output passing the most amoutn of gates.
+
+  Glitches and Hazards are when a single input change causes mulitple output changes. Glitches change the output back and forth and returns the correct answer after the time delay elapses. Transition between two prime implicants in teh K'Map can lead to glitches. To prevent it you can add redundant implicants to cover the boundry but this added hardware cost.
+
+  Glitches can also occur if there are mulitpl input transitions at the same time and occur all the time in real world hardware. This is something that cannot be changed by extra hardware. 
+
+  Excercises:
+
+  <img src=/docs-LearningLog/ExcerciseSolutions/Timing_Demux_Decoder.jpg width="40%">
+
+  
+- **Next:** 2.10 & Excercises
+
+----------------------------------------------------------------
+
 ### 2026-04-26 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
