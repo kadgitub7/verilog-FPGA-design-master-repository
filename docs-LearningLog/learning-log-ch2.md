@@ -24,7 +24,7 @@
 
   <img src=/docs-LearningLog/ExcerciseSolutions/Excercise2.jpg width="40%"> <img src=/docs-LearningLog/ExcerciseSolutions/InterviewQuestions2.jpg width="40%">
   
-- **Next:** 
+- **Next:** 3.1 & 3.2
 
 ----------------------------------------------------------------
 
