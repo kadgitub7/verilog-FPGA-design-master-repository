@@ -13,13 +13,16 @@
 
 ## Entries
 
-### YYYY-MM-DD — 
+### 2026-04-28 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
-- **Section:** 
+- **Section:** 2.10 & Excecises
 - **Repo:** N/A
 - **Learning:** 
   
+  Excercises:
+
+  <img src=/docs-LearningLog/ExcerciseSolutions/Excercise2.jpg width="40%"> <img src=/docs-LearningLog/ExcerciseSolutions/InterviewQuestions2.jpg width="40%">
   
 - **Next:** 
 
@@ -35,10 +38,12 @@
   Multiplexers are one of the most commonly used combinational circuits. They select one of the many inputs to be their output based on a select line(sometimes called a mux). 
   A 2:1 multiplexer takes two inputs and outputs the value of the line(Input 1 or Input 2) based on if the select value is 0 or 1. Similar extrapolation can be done for higher level mulitplexers.
 
-  To build higher level mulitplexers you can use logic gates or mulitple lower level multiplexers. The issue is determining which select line to place for each multiplexer in the network. This is usually determined through inspection. N:1 mulitpliexers need log base 2 (N) select lines.
+  To build higher level mulitplexers you can use logic gates or mulitple lower level multiplexers. The issue is determining which select line to place for each multiplexer in the network. This is usually determined through inspection. N:1 mulitpliexers need log base 2 (N) select lines. The position of the select lines is based on what types of demux you use to construct the larger demux. If you want to make a 1:16 demux and you have two levels: 2 1:8 demux in the second level and 1 1:2 demux in the first level, we know that 1:8 required 3 select lines and 1:2 requires 1 select line. Sine 1:16 has 4 select lines the S3 goes to the first level and S2-S0 go to second level. Other constuctions follow a similar theory.
 
   A decoder takes some inputs and the number of outputs is equalivalent to the number of different values the input bits can represent in binary. The output bit that is HIGH is the value of the input in binary. 00 input corresponds to Y0 as HIGH, 01 input corresponds to Y1 as HIGH.
   - Decoders can be used to build logic. This is because they have a sequence of minterms and form an equation that takes into account all the combination of literals. An example is the formation of logic XOR from 2:4 decoder and OR gate.
+
+  To build logic boolean functions with demux you need the number of selection lines = to the number of variables.
 
   Timing is one of the most complicated components of circuit building and analysis. It involves understanding that there is a delay between when an input changes value to the output changing value. A timing diagram is used which portrays the transient reponse of the circuit an input changes.
   - The transition from LOW to HIGH is the rising edge
