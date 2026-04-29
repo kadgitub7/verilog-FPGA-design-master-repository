@@ -54,15 +54,16 @@
             Therefore the previous state is presenved when both inputs are FALSE. This is the condition where memory is stored.
     <img src=/docs-LearningLog/schematics/SR_latch_table.png width="20%">
 
-    S stands for set and R stands for reset. When S is asserted the value of the bit is set to 1, when R is asserted the value of the bit is reset to 0. When neither is asserted the memory of the previous state is kept. If both are asserted then the value goes to 0. This last part does not make any sense since we are trying to both set and reset the value resulting in both outputs being 0, which also doesn't make sense since they are supposed to be compliments of each other.
+     S stands for set and R stands for reset. When S is asserted the value of the bit is set to 1, when R is asserted the value of the bit is reset to 0. When neither is asserted the memory of the previous state is kept. If both are asserted then the value goes to 0. This last part does not make any sense since we are trying to both set and reset the value resulting in both outputs being 0, which also doesn't make sense since they are supposed to be compliments of each other.
 
   2) D Latch
     - Compared to the SR latch, which has a multitude of problems: It has trouble when both S and R are asserted, it cannot uniquely control what the value is and when the value will change as both happen at the same time.
-    - The D Latch is able to use a input D(data input) to control what the next state should be, and a Clock(clk) to control when the change should happen.
-    <img src=/docs-LearningLog/schematics/D_latch.png width="20%">
+    - The D Latch is able to use a input D(data input) to control what the next state should be, and a Clock(clk) to control when the change should happen.    
     - The D latch keeps memory when the Clk is LOW and when the Clk if HIGH it sets whatever value its D(data input) is to Q(the state variable). It acts transparent when Clk is HIGH and opaque when Clk is LOW.
     - The F latch updates it state continuously when Clk is HIGH.
-  
+
+<img src=/docs-LearningLog/schematics/D_latch.png width="40%">
+
   3) D Flip Flop
     - D flip flop is shown in the diagram below. It is built using two D latches. One is the master and the other is the slave. They are connected and shar a Clk but the master has the complimented version. When the Clk is 0, the master is transparent(Open) and the value of the data input(D) is propagatted through N1 but not through the slave. When the Clk switched from 0 to 1, the master is deactivated and the slave is activated. The value at N1 which does not change since the master is deactivated gets sent through the slave out to Q. Therefore we are able to control when exactly the state changes based on when the rising edge of the clock happens(Change from 0 to 1). Therefore the issue of continuous changes of the state do not occur. At all other times it simply remebers its state(memory).
     <img src=/docs-LearningLog/schematics/D_FlipFlop.png width="20%">
@@ -78,7 +79,7 @@
 
   Excercises:
 
-  <img src=/docs-LearningLog/ExcerciseSolutions/FlipFlops.png width="20%">
+  <img src=/docs-LearningLog/ExcerciseSolutions/FlipFlops.jpg width="40%">
   
 - **Next:** 3.3 & 3.4
 
