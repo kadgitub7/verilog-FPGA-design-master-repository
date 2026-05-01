@@ -63,7 +63,8 @@
 
   Excercises:
 
-  
+  <img src=/docs-LearningLog/schematics/FSM.png width="40%">
+  <img src=/docs-LearningLog/schematics/MealyMachine.png width="40%">
   
 - **Next:** 3.5 & 3.6
 
