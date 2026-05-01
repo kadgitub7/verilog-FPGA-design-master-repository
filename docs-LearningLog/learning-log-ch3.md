@@ -25,6 +25,50 @@
 
 ----------------------------------------------------------------
 
+### 2026-04-30 — 
+
+- **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
+- **Section:** 3.3 & 3.4
+- **Repo:** N/A
+- **Learning:** 
+  
+  Sequential circuits unlike combinational circuits are tricky to deal with because due to the propogation delay, there can be differences in how the circuit operates. We may think that it works properly but the speed of each route can cause unideal situations as well aas race conditions were an output is wrong because one path was faster or slower than we expected. They have difficult conditions such as race condition and unstable values which are difficult to identify and fix.
+
+  To avoid these conditions registers are installed throghout the circuit to pause the state until a clock edge is reached. This allows for the difference in propgoation delay to be taken out as everything moves on the clock edge. This is called synchronous sequencial circuits.
+
+  A synchronous sequential circuit has many qualities. It is defined by a set of states as well as a clock. The rising edge of the clock is when state transitions occur. Current and Next state are used to identify where we are and what we will look like in the future. There is a lower bound and upper bound of the time is takes since the clock edge to when the output changes. Additionally there is setup and hold time to determine when the inputes must be stable relative to the clock edge. The rules of synchronous circuits are as follows:
+
+  - Every circuit element is either a register or a combinational circuit
+  - At least one circuit element is a register
+  - All registers receive the same clock signal
+  - Every cyclic path contains at least one register
+
+  Any sequential circuit that is not synchronous is asynchronous. The Flip Flop is the simplest of synchronous sequential circuits since it has a clock a set of states a current state and next state(Clk, {0,1}, Q, D).
+
+  Synchronous circuits are easier to deal with than asynchronous becuase they are more organized and predictable.
+
+  Finite state machines. These are types of synchronous sequential circuits. They are given the name because they have a finite set of states based on the number of registers(k). The number of states is given by 2^k. In Moore machines the next state is only dependent on the current state and in the Mealy machines the next state is dependent on the current inputs and the current state. 
+
+  Choosing encoding can be difficult as you would need to try every possibility to determine which is the most optimal. You can use CAD tools to simplify this. 
+
+  You can factor state machines and make it so that they becomes smaller state machines that interact with each other. The output of one is the input to another.
+
+  To design FSM use the following sequence:
+  - Identify Inputs and Outputs
+  - Sketch a transition state diagram
+  - For Moore Machine: Write the state transition table and Output table
+  - For Mealy machine: Write a combined state transition and output table
+  - Write the boolean equation for the next state and the output logic
+  - Sketch the circuit schematic
+
+  Excercises:
+
+  
+  
+- **Next:** 3.5 & 3.6
+
+----------------------------------------------------------------
+
 ### 2026-04-29 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
