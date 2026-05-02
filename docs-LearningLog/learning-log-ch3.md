@@ -25,6 +25,59 @@
 
 ----------------------------------------------------------------
 
+### 2026-05-02 — 
+
+- **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
+- **Section:** 3.5
+- **Repo:** N/A
+- **Learning:** 
+  Whenever a Flip Flop takes the next state value and pushes it to the output in the current state. This is called sampling and works well when S' is stable at 0 or 1. But what if the value of S' is changing as the clock edge happens. Apeture time is the time around a clock edge where we need the input to be stable so that the output is well defined. This apeture time is defined as a setup and hold time before and after the clock edge respectibly that we cannot sample in to get a well defined value. Apeture time = setup time + hold time
+
+  We can defined the output more clearly by makign it so that we only sample from discrete points at clock cycles, therefore instead of A(t) we can treat it as A[n] where n is the number of clock cycle. When using this we need to make sure the period of the clock is more than the time it takes for all signals to settle.
+
+  Clock period is the time between two rising edges. Clock frequency is 1/(clock period)[measured in Hz] and the amount of clock edges in 1 second. Increasing clock frequency means that there is an increase in the amount of work a digital system can perform since it can do more controls. 
+
+  Tp - clock Period
+  t(pcq) - propogation delay from clock to Q
+  t(pd) - propogation delay of D
+  t(setup) - setup time
+
+  Tp>= t(pcq) + t(pd) + t(setup)
+  Characterizes the minimum clock period time
+
+  Additionally there is some t(hold) after the clock edge where the value is changing and we cannot use:
+  This amount is dictaded by the contamination delay:
+
+  t(cd) - contamination delay of D
+  t(ccq) - contamination delay of c to Q
+
+  t(hold) <= t(cd) + t(ccq)
+
+  There is always going to be some variant in the clock reaching the components and therefore they will be activated at slightly different times. This is called the clock skew. The time between the first clock changing and the last clock changing is the clock skew. You can add this to the equations to determine the minimum time for clock period.
+
+  A metastable state is when the input changes during the apeture time and the output is undefined in some voltage between 0 and 1. The flip flop will resolve this by itself after some given resolution time which is unbounded.
+
+<img src=/docs-LearningLog/schematics/resolutionTime.png width="20%">
+  
+  Tc is the clock period and To is and tao are the charecteristics of the flip flop. 
+
+  The world we live in has a lot of asynchronous inputs. These can cause issues and lead to metastable points. In devices like phones 1 in 10 years can be acceptable but in medical devices you don't want to happen in a very long time. We need to design systems that can provided the correct output in these conditions.
+
+  Synchronizers work to take input and if the input does not change in the apeture time then it just passes that input. If it changes during the apeture time then it provides the correct output with high probability.
+
+<img src=/docs-LearningLog/schematics/synchronizer.png width="20%">
+
+  This is the probability of failture at a random time, if you have the signal changing N times per second, then the probability multiplies by N. The systems reliability is measure in Mean Time Between Failure(MTBF). This is the recipricol of the N times the equation above. 
+
+
+  Excercises:
+
+  <img src=/docs-LearningLog/ExcerciseSolutions/Timing.jpg width="40%">
+  
+- **Next:** 3.6
+
+----------------------------------------------------------------
+
 ### 2026-04-30 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
@@ -63,10 +116,10 @@
 
   Excercises:
 
-  <img src=/docs-LearningLog/schematics/FSM.png width="40%">
-  <img src=/docs-LearningLog/schematics/MealyMachine.png width="40%">
+  <img src=/docs-LearningLog/ExcerciseSolutions/FSM.jpg width="40%">
+  <img src=/docs-LearningLog/ExcerciseSolutions/MealyMachine.jpg width="40%">
   
-- **Next:** 3.5 & 3.6
+- **Next:** 3.5
 
 ----------------------------------------------------------------
 
