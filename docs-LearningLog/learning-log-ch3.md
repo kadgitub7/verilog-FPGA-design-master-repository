@@ -25,6 +25,28 @@
 
 ----------------------------------------------------------------
 
+### 2026-05-03 — 
+
+- **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
+- **Section:** 3.6
+- **Repo:** N/A
+- **Learning:** 
+  The speed of a system is determined by the latency and the throughput of the tokens(a group of inputs that are processed into a group of outputs). The latency of the system is the time it takes for 1 token to pass through and get processed. The throughput is the amount of token that are processed in a unit time.
+
+  There are two types of ways to improve latency. If there is more hardware so that tokens can be processed multiple times at the same time that is parralelism which involes the same process happening mulitple times side by side. Temproal parellelism involes a pipelined assembly line type format. This consists of tasks happening all at once so multiple stages are happening in parellel and dont need the entire process to finish to start the first stage again.
+
+  When using parallelism the latency does not change. Since the amount of time to make a single token will remain consistent unless a different method(hardware is configured differently) is used. The throughput is the only thing that changes and usually divides by N if there are N blocks processing tokens. With temporal parallelism if depends on the individual time of the pipeline. The longest step is what is used to calculate the throughput and therefor will become 1/(time for longest step). 
+
+  You must know when to use parallelism. If you are waiting for the output to be used for future processing then parallel processing is useful since you are wasting time that could speedd up the process. You need to identify when a process is dependent on other sections and make logical decisions.
+
+  Excercises:
+
+  <img src=/docs-LearningLog/ExcerciseSolutions/Parallelism.jpg width="40%">
+  
+- **Next:** 3.7 & Questions
+
+----------------------------------------------------------------
+
 ### 2026-05-02 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
