@@ -13,16 +13,16 @@
 
 ## Entries
 
-### YYYY-MM-DD — 
+### 2026-05-04 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
-- **Section:** 
+- **Section:** 3.7 & End of Chapter problems
 - **Repo:** N/A
 - **Learning:** 
-  
+  <img src=/docs-LearningLog/ExcerciseSolutions/InterviewQuestions3.jpg width="40%">
   
 - **Next:** 
-
+    4.1 & 4.2
 ----------------------------------------------------------------
 
 ### 2026-05-03 — 
