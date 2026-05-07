@@ -25,11 +25,46 @@
 
 ----------------------------------------------------------------
 
+### 2026-05-07 — 
+
+- **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
+- **Section:** 4.3 & 4.4
+- **Repo:** N/A
+- **Learning:** 
+  Structural modelling is using smaller designs to develop larger designs. A 4:1 mux can be creased using multiple 2:1 mux as shown in Example 4.15:
+
+  **/repos/example4dot15.v**
+  
+  If a signle module is used multiple times then it is called an instance. Multiple instances need multiple names to make sure we know which one does what. 
+
+  Complex systems are designed heirarchically. The involes brakign down larger problems into smaller problems which are boken down recursively until they are able to be behavorially explained. 
+
+  Here an example of a 8 bit 2:1 mux is built using 2 4 bit 2:1 mux:
+
+  **/repos/example4dot17.v**
+
+  Sequential cricuits need a memory element and are changed values periodically.
+  **always** statements in Verilog make sure that the value only change and are recomputed when there is a change in the sensitivity list. This is a list of values where anything placed inside will be continuously checked for updates and the following inside code will run when that happens. Usually only the clk will be in the sensitivity list so that it detects when something is changing and to recompute the values.
+
+  **assign** statements are different. They are evaluated every time any of the inputs change. They do not wait for some clock change to happen.
+
+  This is a representation of a register in verilog. We use the always term to change values whenever the clock changes value. The format q <= d means q gets d, which is q gets the value of d at that time. This is also a non-blocking assignment which is different from assign. All variables on the left hand side of <= must be reg variable type. 
+
+  Some times you want a reset value so that once the power is turned on there is no unknown value and you can reset the value to get an operational register.
+
+  An enable register only works when teh enable is true, this can be used to dictate when you want the values to change if not at a periodic time.
+
+  **/repos/example4dot18.v**
+
+- **Next:** 4.5 & 4.6
+
+----------------------------------------------------------------
+
 ### 2026-05-05 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
 - **Section:** 4.1 & 4.2 
-- **Repo:** 
+- **Repo:** /repos/example4dot1.v, /repos/example4dot2.v, /repos/example4dot5.v
 - **Learning:** 
   HDL is a way to describe language in code and therefore the CAD software is able to configure the logic gates in the most optimal combination. This is what is used in industry to build commertial products. I will focus on Verilog implementation in my repositories and learning.
 
