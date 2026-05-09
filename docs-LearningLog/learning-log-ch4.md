@@ -25,6 +25,32 @@
 
 ----------------------------------------------------------------
 
+### 2026-05-09 — 
+
+- **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
+- **Section:** 4.5
+- **Repo:** N/A
+- **Learning:** 
+  Always statements are used in sequential circuits because they allow us to remember the past state and to update values at a specific time. They can also be used in combinational circuits if we put the inputs in the sensitivity list. This way, we are able to change the outputs only when the inputs change. 
+  
+  This is shown in **/repos/example4dot23.v**. We use the always @(*) to indicate that anything changing in the inputs results in a reupdate of the outputs. Additionally y must be reffered to as a reg because it is inside an always block.
+
+  Nonblocking assignment is when all the values on the right hand side of the assignment are computed concurrently before they are assignment to the left hand variable. This way there is no interference between signals. Blocking assignment is signified by "=", nonblocking assignment is signified as "<=". 
+
+  Case and If statements are commonly used for combinational logic and appear inside an always block. These statements can be used to directly input the truth table into the HDL and allow it to cconfigure the gates for the specific case. This is a simple and intuitive description which works well for combinational circuits. 
+  **/repos/example4dot25.v**
+
+  Case statements must appear inside the always block and are also accompanied by a default statement, this is just a catch all where any input not specified get a standard output. If the default or other case is not used then the state is remebered and it becomes a sequential circuit.
+
+  If, else if, and else statements are used and provide an extension of the case operators. They can check for specific values. If all possible inputs are provided they act as combinational logic, if not then they operate as sequential logic. 
+  **/repos/example4dot27.v**
+
+  The casez is used in Verilog to represent don't cares.
+  
+- **Next:** 4.6
+
+----------------------------------------------------------------
+
 ### 2026-05-07 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
@@ -56,7 +82,7 @@
 
   **/repos/example4dot18.v**
 
-- **Next:** 4.5 & 4.6
+- **Next:** 4.5
 
 ----------------------------------------------------------------
 
