@@ -25,6 +25,26 @@
 
 ----------------------------------------------------------------
 
+### 2026-05-10 — 
+
+- **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
+- **Section:** 4.6 
+- **Repo:** N/A
+- **Learning:** 
+  Finite state machines are very easy to model when you are able to assign next states and outputs.
+
+  **/repos/example4dot31.v**
+
+  Here a divide by 3 FSM is implemented. You can use the clk, and reset to force the state to a single value. Defineing the states using parameterr is useful and can simplify the code well. Then you define the state transitions and the output based on the state values.
+
+  The moore FSM for pattern matching is shown, it mirrors a very similar sequence where we define inputs, outputs and state transitions based on input to transition states.
+
+  **/repos/example4dot36.v**
+  
+- **Next:** 4.7
+
+----------------------------------------------------------------
+
 ### 2026-05-09 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
