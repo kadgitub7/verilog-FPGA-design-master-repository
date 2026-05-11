@@ -25,6 +25,20 @@
 
 ----------------------------------------------------------------
 
+### 2026-05-11 — 
+
+- **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
+- **Section:** 4.7 
+- **Repo:** N/A
+- **Learning:** 
+  You can use parameters in your module to be able to freely configure it. This way you do not need a fixed size on your inputs. You set a default and accomodate for any variance.
+
+  **/repos/example4dot34.v**  
+  
+- **Next:** 4.8
+
+----------------------------------------------------------------
+
 ### 2026-05-10 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
