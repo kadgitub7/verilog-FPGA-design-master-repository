@@ -13,15 +13,20 @@
 
 ## Entries
 
-### YYYY-MM-DD — 
+### 2026-05-23 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
-- **Section:** 
+- **Section:** 4.8
 - **Repo:** N/A
 - **Learning:** 
+  Testbenches are used to simulate different inputs for a module without a board. This can be used to debug your module or to test it before coding your FPGA. There is usually a Device Under Test which is the module that you wish to investigate. Then you add different inputs with time delays and wait for the output. Ideally you want to go through all possible inputs in your testbench but this can sometimes get large.
+
+  You can write if statements like if (y !== 0) $display("001 did not process correctly")
+  These statements will let you know exactly which combination of inputs did not work properly and help you debug instead of lookign through the waveform.
+
+  This process can also be tedious and therefore you can create a file for a set of inputs and expected outputs and use an always/process loop to go through them and check if the output is the same.
   
-  
-- **Next:** 
+- **Next:** 4.9
 
 ----------------------------------------------------------------
 
