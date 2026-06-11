@@ -23,6 +23,28 @@
 
 ----------------------------------------------------------------
 
+### 2026-06-11 — 
+
+- **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
+- **Section:** 6.3 & 6.4 
+- **Repo:** N/A
+- **Learning:** 
+  You need to further break down assembly language into machine language which the computer understands. There are mulitple different types like R, I, J type.
+
+  R type stands for register type, it uses three registers, two as sources and one as destination. op, rs, rt, rd, shamt, and funct. Each field is five or six bits, as indicated. the op and funct are values assignedd for the operation we are performing, the rs, rt, and rd are teh first two registers and the destination register. shamt is for shift operations. 
+
+  I type is immediate type. It has the following segments: op,rs,rt,imm. The first three are the same but rt is the destination register. imm is the immediate command is the source operand. 
+
+  J type is jump type. This is most likely to get memory addresses. They jump to some address provided and retrieve some value. 
+
+  We can represent logic gates through instructions in MIPS. This makes it easy to manipulate bits and either remove with and or append/fuse together with or. 
+
+  Different commands can be replicated like if statements, loops, arrays and the such in machine code which is understood by the computer. This way we can translate human readable to machine readable.
+  
+- **Next:** 6.5 & 6.6
+
+----------------------------------------------------------------
+
 ### 2026-06-10 — 
 
 - **Book:** David Harris & Sarah Harris: Digital Design and Computer Architecture
